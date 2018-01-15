@@ -4,7 +4,7 @@ var fs = require( 'fs' ) ;
 var HtmlToPdf = require( '..' ) ;
 
 
-var raw = "normal <i>italic</i> normal" ;
+var raw = "<h1>Title</h1> normal <i>italic</i> normal" ;
 var htmlDoc = HtmlToPdf.parse( raw ) ;
 
 console.log( htmlDoc.parts ) ;
@@ -21,7 +21,7 @@ console.log() ;
 
 var pdfStream = htmlDoc.createPdfStream() ;
 
-pdfStream.pipe( fs.createWriteStream('test.pdf') ).on( 'finish' , () => {
+pdfStream.pipe( fs.createWriteStream( 'test.pdf' ) ).on( 'finish' , () => {
     //success
 } ) ;
 
