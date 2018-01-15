@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var pdfMake = require( 'pdfmake' ) ;
+var fs = require( 'fs' ) ;
 var HtmlToPdf = require( '..' ) ;
 
 
@@ -12,42 +12,19 @@ console.log() ;
 console.log( htmlDoc.parts[1].subParts ) ;
 console.log() ;
 
-var output = htmlDoc.render() ;
-console.log( output ) ;
+/*
+var pdfDocDef = htmlDoc.renderPdfDef() ;
+console.log( pdfDocDef ) ;
 console.log() ;
+*/
 
 
-var pdfDoc = {
-	styles: HtmlToPdf.defaultStyles ,
-	content: output
-} ;
+var pdfStream = htmlDoc.createPdfStream() ;
 
-console.log( pdfDoc ) ;
-console.log() ;
-
-
-
-// pdfmake things
-
-var fonts = {
-	Roboto: {
-		normal: './fonts/Roboto-Regular.ttf',
-		bold: './fonts/Roboto-Medium.ttf',
-		italics: './fonts/Roboto-Italic.ttf',
-		bolditalics: './fonts/Roboto-Italic.ttf'
-	}
-};
-
-var PdfPrinter = require('pdfmake/src/printer');
-var printer = new PdfPrinter(fonts);
-
-var pdfDoc = printer.createPdfKitDocument( pdfDoc );
-pdfDoc.pipe(fs.createWriteStream('test.pdf')).on('finish',function(){
+pdfStream.pipe( fs.createWriteStream('test.pdf') ).on( 'finish' , () => {
     //success
-});
-pdfDoc.end();
+} ) ;
 
-
-
+pdfStream.end() ;
 
 
