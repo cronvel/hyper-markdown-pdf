@@ -5,7 +5,7 @@ var HtmlToPdf = require( '..' ) ;
 
 
 var raw = "<h1>Title</h1><p>normal <u>underline</u> normal</p><u>underline 2</u>" ;
-var raw = "Some text, <u>some underline test</u>" ;
+var raw = "Some text, <u>some underline text,</u> <i>some italic text</i>" ;
 var htmlDoc = HtmlToPdf.parse( raw ) ;
 
 console.log( htmlDoc.parts ) ;
