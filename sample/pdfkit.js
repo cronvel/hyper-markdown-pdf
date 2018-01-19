@@ -4,8 +4,17 @@ var fs = require( 'fs' ) ;
 var HtmlToPdf = require( '..' ) ;
 
 
-var raw = "<h1>Title</h1><p>normal <u>underline</u> normal</p><u>underline 2</u>" ;
-var raw = "<h1>Title</h1>\nSome normal text, <u>some underline text,</u> <i>some italic text,</i>some normal text again..." ;
+var raw ;
+
+raw = "<h1>Title</h1>\n\n\nSome normal text, <u>some underline text,</u> <i>some italic text,</i>some normal text again..." ;
+
+//*
+raw += " and again...".repeat( 10 ) ;
+raw += "<i>" + " and again...".repeat( 10 ) + "</i>" ;
+raw += "<h1>Another section</h1>" ;
+raw += "Blah" + " blah".repeat( 20 ) + "." ;
+//*/
+
 var htmlDoc = HtmlToPdf.parse( raw ) ;
 
 console.log( htmlDoc.parts ) ;
