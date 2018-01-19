@@ -13,6 +13,14 @@ raw += " and again...".repeat( 10 ) ;
 raw += "<i>" + " and again...".repeat( 10 ) + "</i>" ;
 raw += "<h1>Another section</h1>" ;
 raw += "Blah" + " blah".repeat( 20 ) + "." ;
+raw += "<h1>Another section</h1>" ;
+raw += "Blah" + " blah".repeat( 20 ) + "." ;
+raw += "<h1>Another section</h1>" ;
+raw += "Blah" + " blah".repeat( 20 ) + "." ;
+raw += "<h1>Another section</h1>" ;
+raw += "Blah" + " blah".repeat( 20 ) + "." ;
+raw += "<h1>Another section</h1>" ;
+raw += "Blah" + " blah".repeat( 20 ) + "." ;
 //*/
 
 var htmlDoc = HtmlToPdf.parse( raw ) ;
