@@ -1,5 +1,7 @@
 
-# Title
+# A Great Title
+
+## A Nice Subtitle
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus.
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
