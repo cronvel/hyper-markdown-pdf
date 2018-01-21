@@ -15,6 +15,8 @@ Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrer
 * item #2
 * item #3
 
+## A Nice Subtitle
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus.
 See [the soulblog here](http://blog.soulserv.net).
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
