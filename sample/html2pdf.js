@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
+"use strict" ;
+
 var fs = require( 'fs' ) ;
-var HtmlToPdf = require( '..' ) ;
+var htmlToPdf = require( '..' ) ;
 
 
 
@@ -24,9 +26,9 @@ raw += "<h1>Another section</h1>" ;
 raw += "Blah" + " blah".repeat( 20 ) + "." ;
 //*/
 
-var htmlDoc = HtmlToPdf.parse( raw ) ;
+var htmlDoc = htmlToPdf.HtmlDoc.parse( raw ) ;
 
-console.log( htmlDoc.parts ) ;
+console.log( htmlDoc.nodes ) ;
 console.log() ;
 //console.log( htmlDoc.parts[1].subParts ) ;
 console.log() ;
@@ -38,5 +40,6 @@ console.log() ;
 */
 
 
-htmlDoc.pdfKitRender() ;
+var pdfRenderer = new htmlToPdf.PdfRenderer() ;
+pdfRenderer.render( htmlDoc ) ;
 

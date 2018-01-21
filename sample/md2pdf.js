@@ -1,20 +1,23 @@
 #!/usr/bin/env node
 
+"use strict" ;
+
 var fs = require( 'fs' ) ;
-var HtmlToPdf = require( '..' ) ;
+var htmlToPdf = require( '..' ) ;
 var hyperMarkdown = require( 'hyper-markdown' ) ;
+var inspect = require( 'string-kit' ).inspect ;
 
 
 
 var mdCode = fs.readFileSync( 'test.md' , 'utf8' ) ;
 var htmlCode = hyperMarkdown( mdCode ) ;
 console.log( htmlCode ) ;
-var htmlDoc = HtmlToPdf.parse( htmlCode ) ;
+var htmlDoc = htmlToPdf.HtmlDoc.parse( htmlCode ) ;
 
-console.log( htmlDoc.parts ) ;
+//console.log( htmlDoc.parts ) ;
+console.log( inspect( { depth: 10 , style: 'color' } , htmlDoc.nodes ) ) ;
 console.log() ;
-//console.log( htmlDoc.parts[1].subParts ) ;
-console.log() ;
+//return ;
 
 /*
 var pdfDocDef = htmlDoc.renderPdfDef() ;
@@ -23,5 +26,6 @@ console.log() ;
 */
 
 
-htmlDoc.pdfKitRender() ;
+var pdfRenderer = new htmlToPdf.PdfRenderer() ;
+pdfRenderer.render( htmlDoc ) ;
 
