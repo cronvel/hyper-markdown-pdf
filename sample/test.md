@@ -47,7 +47,23 @@ Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrer
 * item #2
 * item #3
 
-## Images
+## A Nice Subtitle
 
-This is an inline ![logo](soulserv.png) image and another inline ![logo](soulserv.png) image.
+!![The Soulserv logo](soulserv.png)
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus.
+See [the soulblog here](http://blog.soulserv.net).
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
+Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrerit. Ut nec accumsan nisl.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
+Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrerit. Ut nec accumsan nisl.
+
+* item #1
+* item #2
+* item #3
+
+## Inline Images
+
+This is an inline ![logo](soulserv.png) image and another INLINE ![logo](soulserv.png) image.
 
