@@ -33,6 +33,7 @@ build
 .grunt
 package-lock.json
 sample/*pdf
+sample/*html
 sample/package*
 
 node_modules

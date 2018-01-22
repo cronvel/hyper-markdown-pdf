@@ -10,7 +10,7 @@
     "test": "test"
   },
   "dependencies": {
-    "pdfkit": "^0.8.3",
+    "pdfkit": "0.8.3",
     "pdfmake": "^0.1.35"
   },
   "devDependencies": {
