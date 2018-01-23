@@ -15,7 +15,7 @@ console.log( htmlCode ) ;
 var htmlDoc = htmlToPdf.HtmlDoc.parse( htmlCode ) ;
 
 //console.log( htmlDoc.parts ) ;
-console.log( inspect( { depth: 10 , style: 'color' } , htmlDoc.nodes ) ) ;
+//console.log( inspect( { depth: 10 , style: 'color' } , htmlDoc.nodes ) ) ;
 console.log() ;
 //return ;
 
