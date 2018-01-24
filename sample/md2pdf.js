@@ -12,6 +12,7 @@ var inspect = require( 'string-kit' ).inspect ;
 
 var mdCode = fs.readFileSync( 'test.md' , 'utf8' ) ;
 var htmlCode = hyperMarkdown( mdCode ) ;
+//console.log( htmlCode ) ; process.exit() ;
 //var htmlCode = marked( mdCode ) ;
 var htmlDoc = htmlToPdf.HtmlDoc.parse( htmlCode ) ;
 

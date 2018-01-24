@@ -39,7 +39,7 @@ Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrer
 
 ## A Nice Subtitle
 
-!!:[The Soulserv logo The Soulserv logo The Soulserv logo The Soulserv logo](soulserv.png)
+:!![](soulserv.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus.
 See [the soulblog here](http://blog.soulserv.net).
@@ -49,9 +49,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
 Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrerit. Ut nec accumsan nisl.
 
-* item #1
-* item #2
-* item #3
+## A Nice Subtitle
+
+!!:[The Soulserv logo The Soulserv logo The Soulserv logo The Soulserv logo](soulserv.png)
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus.
+See [the soulblog here](http://blog.soulserv.net).
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
+Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrerit. Ut nec accumsan nisl.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
+Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrerit. Ut nec accumsan nisl.
 
 ## A Nice Subtitle
 
@@ -65,9 +73,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
 Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrerit. Ut nec accumsan nisl.
 
-* item #1
-* item #2
-* item #3
+## A Nice Subtitle
+
+!![](soulserv.png)
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus.
+See [the soulblog here](http://blog.soulserv.net).
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
+Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrerit. Ut nec accumsan nisl.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in suscipit purus.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus nec hendrerit felis.
+Morbi aliquam facilisis risus eu lacinia. Sed eu leo in turpis fringilla hendrerit. Ut nec accumsan nisl.
 
 ## Inline Images
 
