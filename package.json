@@ -1,6 +1,6 @@
 {
   "name": "hyper-markdown-pdf",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Hyper Markdown to PDF",
   "main": "lib/htmlToPdf.js",
   "engines": {
