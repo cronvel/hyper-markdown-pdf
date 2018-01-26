@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-	Hyper PDF
+	Meta PDF
 	
 	Copyright (c) 2018 Cédric Ronvel
 	
