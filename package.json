@@ -1,6 +1,6 @@
 {
   "name": "meta-pdf",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Meta PDF is a pdf renderer based on a subset of HTML as input",
   "main": "lib/metaPdf.js",
   "engines": {

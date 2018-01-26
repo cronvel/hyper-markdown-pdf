@@ -1,6 +1,7 @@
 
 
-# Hyper PDF
+# Meta PDF
 
-This package is deprecated, it has been moved to [Hyper PDF](https://www.npmjs.com/package/hyper-pdf).
+Meta PDF is a pdf renderer based on a subset of HTML as input.
+
 
