@@ -74,7 +74,7 @@ deb( block ) ;
 
 block.render() ;
 
-deb( block ) ;
+//deb( block ) ;
 
 pdfDoc.pdfKitDoc.pipe( fs.createWriteStream( 'test.pdf' ) ) ;
 pdfDoc.pdfKitDoc.end() ;
