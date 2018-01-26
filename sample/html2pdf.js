@@ -3,7 +3,7 @@
 "use strict" ;
 
 var fs = require( 'fs' ) ;
-var htmlToPdf = require( '..' ) ;
+var hyperPdf = require( '..' ) ;
 
 
 
@@ -26,7 +26,7 @@ raw += "<h1>Another section</h1>" ;
 raw += "Blah" + " blah".repeat( 20 ) + "." ;
 //*/
 
-var htmlDoc = htmlToPdf.HtmlDoc.parse( raw ) ;
+var htmlDoc = hyperPdf.HtmlDoc.parse( raw ) ;
 
 console.log( htmlDoc.nodes ) ;
 console.log() ;
@@ -40,6 +40,6 @@ console.log() ;
 */
 
 
-var pdfRenderer = new htmlToPdf.PdfRenderer() ;
+var pdfRenderer = new hyperPdf.PdfRenderer() ;
 pdfRenderer.render( htmlDoc ) ;
 

@@ -1,5 +1,6 @@
 
 
-# Hyper Markdown to PDF
+# Hyper PDF
 
-Early alpha.
+This package has been moved to [Hyper PDF](https://www.npmjs.com/package/hyper-pdf).
+
