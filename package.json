@@ -1,6 +1,6 @@
 {
-  "name": "hyper-markdown-pdf",
-  "version": "0.0.12",
+  "name": "hyper-pdf",
+  "version": "0.0.13",
   "description": "Hyper PDF is a pdf renderer based on a subset of HTML as input",
   "main": "lib/hyperPdf.js",
   "engines": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cronvel/hyper-markdown-pdf.git"
+    "url": "https://github.com/cronvel/hyper-pdf.git"
   },
   "keywords": [
     "pdf",
@@ -28,7 +28,7 @@
   "author": "Cédric Ronvel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cronvel/hyper-markdown-pdf/issues"
+    "url": "https://github.com/cronvel/hyper-pdf/issues"
   },
   "config": {
     "tea-time": {
