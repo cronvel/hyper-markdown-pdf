@@ -1,8 +1,9 @@
 
 
-# Hyper Markdown to PDF
+# Hyper PDF
 
-Early alpha.
+This package is deprecated, it has been moved to [Hyper PDF](https://www.npmjs.com/package/hyper-pdf).
+
 # TOC
    - [...](#)
 <a name=""></a>
