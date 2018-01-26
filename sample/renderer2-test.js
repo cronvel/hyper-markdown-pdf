@@ -27,13 +27,14 @@
 "use strict" ;
 
 var fs = require( 'fs' ) ;
-var hyperPdf = require( '..' ) ;
+var metaPdf = require( '..' ) ;
+var elements = metaPdf.elements ;
 var inspect = require( 'string-kit' ).inspect ;
 
 var inspectOptions = {
 	style: 'color' ,
 	depth: 7 ,
-	protoBlackList: new Set( [ hyperPdf.PdfDocument.prototype ] ) ,
+	protoBlackList: new Set( [ metaPdf.PdfDocument.prototype ] ) ,
 	//propertyBlackList: new Set( [ "parent" ] )
 } ;
 
@@ -41,10 +42,10 @@ function deb( obj ) {
 	process.stdout.write( inspect( inspectOptions , obj ) + '\n' ) ;
 }
 
-//var renderer = new hyperPdf.PdfRenderer2() ;
+//var renderer = new metaPdf.PdfRenderer2() ;
 
-var pdfDoc = new hyperPdf.PdfDocument() ;
-var block = new hyperPdf.FlowBlock( pdfDoc , {
+var pdfDoc = new metaPdf.PdfDocument() ;
+var block = new elements.FlowBlock( pdfDoc , {
 	width: 300 ,
 	height: 300 ,
 //	align: 'topLeft' ,

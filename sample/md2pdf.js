@@ -27,7 +27,7 @@
 "use strict" ;
 
 var fs = require( 'fs' ) ;
-var hyperPdf = require( '..' ) ;
+var metaPdf = require( '..' ) ;
 var hyperMarkdown = require( 'hyper-markdown' ) ;
 var marked = require( 'marked' ) ;
 var inspect = require( 'string-kit' ).inspect ;
@@ -38,20 +38,20 @@ var mdCode = fs.readFileSync( 'test.md' , 'utf8' ) ;
 var htmlCode = hyperMarkdown( mdCode ) ;
 //console.log( htmlCode ) ; process.exit() ;
 //var htmlCode = marked( mdCode ) ;
-var htmlDoc = hyperPdf.HtmlDoc.parse( htmlCode ) ;
+var markupDoc = metaPdf.MarkupDoc.parse( htmlCode ) ;
 
-//console.log( htmlDoc.parts ) ;
-//console.log( inspect( { depth: 10 , style: 'color' } , htmlDoc.nodes ) ) ;
+//console.log( markupDoc.parts ) ;
+//console.log( inspect( { depth: 10 , style: 'color' } , markupDoc.nodes ) ) ;
 console.log() ;
 //return ;
 
 /*
-var pdfDocDef = htmlDoc.renderPdfDef() ;
+var pdfDocDef = markupDoc.renderPdfDef() ;
 console.log( pdfDocDef ) ;
 console.log() ;
 */
 
 
-var pdfRenderer = new hyperPdf.PdfRenderer() ;
-pdfRenderer.render( htmlDoc ) ;
+var pdfRenderer = new metaPdf.PdfRenderer() ;
+pdfRenderer.render( markupDoc ) ;
 

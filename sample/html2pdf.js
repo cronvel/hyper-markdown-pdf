@@ -27,7 +27,7 @@
 "use strict" ;
 
 var fs = require( 'fs' ) ;
-var hyperPdf = require( '..' ) ;
+var metaPdf = require( '..' ) ;
 
 
 
@@ -50,20 +50,20 @@ raw += "<h1>Another section</h1>" ;
 raw += "Blah" + " blah".repeat( 20 ) + "." ;
 //*/
 
-var htmlDoc = hyperPdf.HtmlDoc.parse( raw ) ;
+var markupDoc = metaPdf.MarkupDoc.parse( raw ) ;
 
-console.log( htmlDoc.nodes ) ;
+console.log( markupDoc.nodes ) ;
 console.log() ;
-//console.log( htmlDoc.parts[1].subParts ) ;
+//console.log( markupDoc.parts[1].subParts ) ;
 console.log() ;
 
 /*
-var pdfDocDef = htmlDoc.renderPdfDef() ;
+var pdfDocDef = markupDoc.renderPdfDef() ;
 console.log( pdfDocDef ) ;
 console.log() ;
 */
 
 
-var pdfRenderer = new hyperPdf.PdfRenderer() ;
-pdfRenderer.render( htmlDoc ) ;
+var pdfRenderer = new metaPdf.PdfRenderer() ;
+pdfRenderer.render( markupDoc ) ;
 

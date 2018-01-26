@@ -36,8 +36,5 @@ pdfDoc.text( "bob" , -5 , -5 ) ;
 
 
 
-
-
-
 pdfDoc.pipe( fs.createWriteStream( 'test.pdf' ) ) ;
 pdfDoc.end() ;
